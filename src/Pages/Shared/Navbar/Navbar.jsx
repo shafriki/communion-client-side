@@ -6,7 +6,7 @@ const Navbar = () => {
 
 
     return (
-        <div className='bg-white text-black w-full backdrop-blur opacity-80 md:py-1'>
+        <div className='bg-white sticky top-0 z-50 text-black w-full backdrop-blur opacity-80 md:py-1'>
          <div className="navbar max-w-screen-xl mx-auto">
             <div className="navbar-start">
                 <div className="dropdown">
@@ -47,7 +47,9 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn rounded-full bg-black text-white hover:bg-blue-700 md:px-6">Sign in</a>
+                <NavLink to='/sign-in' className="btn rounded-full bg-black text-white mr-2 hover:bg-blue-700 md:px-6">Sign in</NavLink>
+
+                <NavLink to='/sign-up' className="btn rounded-full bg-black text-white hover:bg-blue-700 md:px-6">Sign up</NavLink>
             </div>
             </div>
         </div>

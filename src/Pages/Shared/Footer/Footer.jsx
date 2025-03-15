@@ -3,7 +3,7 @@ import logo from '../../../assets/communion.png';
 
 const Footer = () => {
     return (
-        <div className='mt-32'>
+        <div className=''>
             <footer className="py-20 flex flex-wrap justify-around items-start gap-10  bg-[#080810] text-white">
                 <aside className="flex mx-2 md:mx-0 flex-col gap-4 max-w-sm">
                     <img src={logo} alt="logo" className='w-44' />

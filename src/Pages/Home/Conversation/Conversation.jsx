@@ -9,7 +9,7 @@ AOS.init();
 
 const Conversation = () => {
     return (
-        <div className='mt-20 max-w-screen-xl mx-auto px-4'>
+        <div className='my-20 max-w-screen-xl mx-auto px-4'>
             {/* main content */}
             <div className='grid grid-cols-1 md:grid-cols-12 gap-5 items-center'>
                 

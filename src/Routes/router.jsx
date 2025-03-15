@@ -4,6 +4,8 @@ import Home from "../Pages/Home/Home/Home";
 import UpcomingEvents from "../Pages/UpcomingEvents/UpcomingEvents";
 import CreateEvents from "../Pages/CreateEvents/CreateEvents";
 import About from "../Pages/About/About";
+import SignIn from "../Pages/Authentication/SignIn/SignIn";
+import SignUp from "../Pages/Authentication/SignUp/SignUp";
 
 export const router = createBrowserRouter([
 
@@ -27,6 +29,14 @@ export const router = createBrowserRouter([
             {
                 path: '/about',
                 element: <About></About>
+            },
+            {
+                path: '/sign-in',
+                element: <SignIn></SignIn>,
+            },
+            {
+                path: 'sign-up',
+                element: <SignUp></SignUp>
             }
 
 
