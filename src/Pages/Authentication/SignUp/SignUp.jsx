@@ -63,7 +63,7 @@ const SignUp = () => {
         <form onSubmit={handleSubmit} className="w-full max-w-sm">
           <input type="text" name="name" placeholder="Enter your name" className="w-full p-3 border rounded mb-4 focus:outline-blue-500" required />
           <input type="email" name="email" placeholder="Enter your email" className="w-full p-3 border rounded mb-4 focus:outline-blue-500" required />
-          <input type="password" name="password" placeholder="Create a password" className="w-full p-3 border rounded mb-4 focus:outline-blue-500" required />
+          <input type="password" autoComplete="current-password" name="password" placeholder="Create a password" className="w-full p-3 border rounded mb-4 focus:outline-blue-500" required />
           <input type="file" name="image" accept="image/*" className="w-full py-3 text-gray-700 bg-white border rounded-lg mb-4" required />
           <button className="w-full btn bg-gradient-to-r from-gray-900 to-blue-500 text-white py-3 rounded font-semibold hover:bg-blue-700">
             {formLoading ? <BeatLoader size={10} color="#ffffff" /> : 'Create Account'}
