@@ -70,7 +70,7 @@ const SignUp = () => {
           </button>
         </form>
         <p className="text-gray-600 mt-4">Already have an account? <NavLink to='/sign-in' className="text-blue-600">Sign in</NavLink></p>
-        <button onClick={handleGoogleSignIn} className="bg-gradient-to-r btn from-blue-900 to-blue-500 border-none mt-5 cursor-pointer w-full flex items-center justify-center py-3 rounded shadow-sm hover:bg-gray-100 text-white">
+        <button onClick={handleGoogleSignIn} className="bg-gradient-to-r btn from-blue-900 to-blue-500 border-none mt-5 cursor-pointer flex items-center justify-center py-3 md:px-24 rounded shadow-sm hover:bg-gray-100 text-white">
           <FcGoogle className="text-2xl mr-2"/>Continue with Google
         </button>
       </div>
