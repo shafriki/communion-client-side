@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { FaCalendarAlt, FaClock, FaMapMarkerAlt } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const UpcomingEvents = () => {
     const [events, setEvents] = useState([]);
@@ -71,9 +72,9 @@ const UpcomingEvents = () => {
                             </p>
 
                             {/* Event Details Button */}
-                            <a href={event.link} className="btn w-full mt-4 bg-gray-900 text-white text-center py-2 rounded-lg hover:bg-gray-700 transition">
+                            <Link to={`/event-details/${event._id}`} className="btn w-full mt-4 bg-gray-900 text-white text-center py-2 rounded-lg hover:bg-gray-700 transition">
                                 Event Details →
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 ))}

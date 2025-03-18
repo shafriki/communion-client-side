@@ -7,6 +7,7 @@ import About from "../Pages/About/About";
 import SignIn from "../Pages/Authentication/SignIn/SignIn";
 import SignUp from "../Pages/Authentication/SignUp/SignUp";
 import PrivateRoute from "./PrivateRoute";
+import EventDetails from "../EventDetails/EventDetails";
 
 export const router = createBrowserRouter([
 
@@ -38,7 +39,11 @@ export const router = createBrowserRouter([
             {
                 path: 'sign-up',
                 element: <SignUp></SignUp>
-            }
+            },
+            {
+                path: 'event-details/:id',
+                element: <PrivateRoute><EventDetails></EventDetails></PrivateRoute>,
+            },
 
 
         ]
