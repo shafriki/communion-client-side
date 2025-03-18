@@ -16,6 +16,7 @@ const CreateEvents = () => {
         const form = event.target;
         const title = form.title.value;
         const date = form.date.value;
+        const time = form.time.value;
         const location = form.location.value;
         const image = form.image.files[0];
 
@@ -39,6 +40,7 @@ const CreateEvents = () => {
                 {
                     title,
                     date,
+                    time,
                     location,
                     imageURL,
                     email: user?.email,
@@ -89,6 +91,10 @@ const CreateEvents = () => {
                     <div className="mb-4">
                         <label className="block font-medium mb-2">Date</label>
                         <input type="date" name="date" className="w-full border p-2 rounded" required />
+                    </div>
+                    <div className="mb-4">
+                        <label className="block font-medium mb-2">Time</label>
+                        <input type="time" name="time" className="w-full border p-2 rounded" required />
                     </div>
                     <div className="mb-4">
                         <label className="block font-medium mb-2">Location</label>
